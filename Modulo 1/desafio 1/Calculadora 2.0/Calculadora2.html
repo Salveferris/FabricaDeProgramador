@@ -1,0 +1,40 @@
+<HTML>
+    <head>
+        <link href="Calculadora2.css" rel="stylesheet"  />
+        
+        <title>
+            Calculadora bonita!
+        </title>
+    </head>
+    <body align="center">
+        <div id="main">
+            <nav class="centro" id="menu">
+                     <h2> Calculadora 2.0 </h2>
+          
+                      <ul>
+                          <li><button onclick="Calculadora.Somando()">Somar</button></li>
+                          <li><button onclick="Calculadora.diminuir()">Subtração</button></li>
+                          <li><button onclick="Calculadora.multiplicar()">Multiplicação</button></li>
+                          <li><button onclick="Calculadora.dividor()">Divisão</button></li>
+                          <li><button onclick="Calculadora.porcentagem()">Porcentagem</button></li>
+                      </ul>
+          
+                  </nav>
+    <main>
+               <div>
+                   <input type="number" id="num1" required/>
+                    </div>
+                        <div>
+                            <input type="number" id="num2">
+                        </div>
+                            <div>
+                                <label>Resultado</label>
+                            </div>
+                            <div>
+                                <label id="result"></label>
+                            </div>
+         </div>
+     </main>
+     <script src="calculadora2.js"></script>
+    </body>
+</HTML>

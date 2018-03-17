@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Bem Casados</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id='cont'>
+        <form id="myform">
+            <div>
+                <img src="http://larimaia.com.br/images/avatar.png" id='avatar' />
+            </div>
+        <div>
+            <input type='number' id='descontoDia'>
+                <label>Porcentagem de brinde </label>
+            </div>
+            <div>
+                <input type="number" id='produto1' onblur="compra()" value=0>
+                <label>R$2,50 Celofane com fita</label>
+
+            </div>
+            <div>
+                <input type="number" id='produto2' onblur="compra()" value=0>
+                <label>R$3,10 Crepom</label>
+            </div>
+            <div>
+                <input type="number" id='produto3' onblur="compra()" value=0>
+                <label>R$3,70 Laço chanel</label>
+            </div>
+            <div>
+                <input type="number" id='produto4' onblur="compra()" value=0>
+                <label>R$3,90 Papel importado</label>
+            </div>
+            <div>
+                <input type='number' id='produto5' onblur="compra()" value=0>
+                <label>R$4,00 Caixa Personalizada</label>
+            </div>
+            <div>
+                <label>Bonus de celofane:</label>
+                <label id='bonus1'></label>
+            </div>
+            <div>
+                <label>Bonus de crepom:</label>
+                <label id='bonus2'></label>
+            </div>
+            <div>
+                <label>Bonus de laço chanel:</label>
+                <label id='bonus3'></label>
+            </div>
+            <div>
+                <label>Bonus de Papel Importado:</label>
+                <label id='bonus4'></label>
+            </div>
+            <div>
+                <label>Bonus de Caixa Personalizada:</label>
+                <label id='bonus5'></label>
+            </div>
+            <div>
+                <label>Total de produtos:</label>
+                <label id='totalprod'></label>
+            </div>
+            <div>
+                <label>Total de produtos brinde:</label>
+                <label id='totalbonus'></label>
+            </div>
+                <div>
+                    <label>Cliente leva pra casa:</label>
+                    <label id='levapracasa'></label>
+                </div>
+            <div>
+                <label>Total em Reais:</label>
+                <label id='totalrs'></label>
+            </div>
+            
+        </div>
+    </form>
+</div>
+<script src="scripts.js"></script>
+</body>
+
+</html>

@@ -13,22 +13,70 @@
             <h1>Calculadora high tech</h1>
         </div>
         <div>
-            <label>Numero 1</label>
+            <label>Número 1</label>
         </div>
         <div>
-            <input type="number">
+            <input type="number" id="num1">
         </div>
         <div>
-            <label>Numero 2</label>
+            <label>Número 2</label>
         </div>
         <div>
-            <input type="number">
+            <input type="number" id="num2">
         </div>
         <div>
-            <button>Calcular</button>
+            <button onclick="Somando()">Somar</button>
+        </div>
+        <div>
+            <button onclick="multiplicar()">Multiplicar</button>
+        </div>
+        <div>
+            <button onclick="dividor()">Dividir</button>
+        </div>
+        <div>
+            <button onclick="diminuir()">Diminuir</button>
+        </div>
 
+
+
+
+        <div>
+            <label>Resultado</label>
+            <br>
+            <label id="result"></label>
         </div>
     </div>
+    <script>
+        function Somando() {
+            var n1 = parseFloat(document.getElementById("num1").value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+
+            var soma = n1 + n2;
+            if (soma < 0) {
+                document.getElementById("result").textContent = "Soma invalida";
+            }
+            else
+                document.getElementById("result").textContent = (soma);
+        }
+        function multiplicar() {
+            var n1 = parseFloat(document.getElementById("num1").value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+            var multip = n1 * n2;
+            document.getElementById("result").textContent = (multip);
+        }
+        function dividor() {
+            var n1 = parseFloat(document.getElementById("num1").value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+            var divi = n1 / n2;
+            document.getElementById("result").textContent = (divi);
+        }
+        function diminuir() {
+            var n1 = parseFloat(document.getElementById("num1").value);
+            var n2 = parseFloat(document.getElementById("num2").value);
+            var dimi = n1 - n2;
+            document.getElementById("result").textContent = (dimi);
+        }
+    </script>
 </body>
 
 </html>

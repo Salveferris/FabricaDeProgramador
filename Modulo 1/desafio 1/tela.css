@@ -14,3 +14,18 @@
 #calculadora input{
     padding: 5px;
 }
+#calculadora button{    
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: 3D8BDC;
+    color: white;
+    font-weight: 600;
+    border:none;
+
+
+}
+#calculadora label{
+    font-weight: 600;
+}

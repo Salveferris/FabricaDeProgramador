@@ -1,0 +1,38 @@
+body{
+    margin-top: 60px;
+    font-family: sans-serif;
+    background-image: url(thumb-1920-601487.jpg);
+}
+#imagem{
+    margin-top: 40px;
+}
+#reg div{
+    background-color: rgb(225, 225, 225);
+    width: 40%;
+    margin:auto;
+    padding: 01px;
+}
+#reg img{
+    height: 100px;
+    width: 100px;
+}
+#reg h1{
+    color:gray;
+}
+#reg input{
+    width: 80%;
+    margin:05px;
+    padding:10px;
+}
+#save{
+    width: 80%;
+    background-color:#4242ff;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+a:link{
+    padding:10px;
+    margin: 10px;
+}
